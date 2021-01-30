@@ -7,20 +7,14 @@ import {
   StatusBar,
 } from 'react-native';
 import { Button } from 'react-native-paper';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Form from './screens/Form';
+
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
-        <View style={[styles.container,styles.center]}>
-          <MaterialCommunityIcons 
-          name="ab-testing"
-          color="blue"
-          size={50}
-          />
-         <Button mode="contained" onPress={() => console.log('button pressed')}>click me!</Button>
-        </View>
+       <Form/>
       </SafeAreaView>
     </>
   );
